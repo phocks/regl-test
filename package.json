@@ -1,0 +1,27 @@
+{
+  "name": "regl-test",
+  "version": "1.0.0-pre",
+  "description": "A project generated from aunty's react app template.",
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    "Joshua Byrd <phocks@gmail.com>"
+  ],
+  "aunty": {
+    "type": "react"
+  },
+  "scripts": {
+    "start": "aunty serve",
+    "test": "aunty test"
+  },
+  "devDependencies": {
+    "@abcnews/aunty": "^9.11.0",
+    "react-test-renderer": "^16.6.3"
+  },
+  "dependencies": {
+    "d3": "^5.7.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "regl": "^1.3.9"
+  }
+}
