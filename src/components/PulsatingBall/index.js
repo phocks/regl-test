@@ -1,17 +1,3 @@
-// import React from 'react';
-// import styles from './styles.scss';
-
-// export default class PulsatingBall extends React.Component {
-//   render() {
-//     return (
-//       <div className={styles.root}>
-//         Find me in <strong>src/components/PulsatingBall/index.js</strong>
-//       </div>
-//     );
-//   }
-// }
-
-
 import React from "react";
 import styles from "./styles.scss";
 // import regl from "regl"
@@ -77,7 +63,6 @@ export default class PulsatingBall extends React.Component {
     function createDrawPoints(points) {
       const drawPoints = regl({
         frag: frag,
-
         vert: vert,
 
         attributes: {
@@ -119,7 +104,6 @@ export default class PulsatingBall extends React.Component {
 
     // function to start the animation loop (note: time is in seconds)
     function animate(layout, points) {
-      console.log("animating with new layout");
       // make previous end the new beginning
       points.forEach(d => {
         d.sx = d.tx;
@@ -168,8 +152,6 @@ export default class PulsatingBall extends React.Component {
 
         // if we have exceeded the maximum duration, move on to the next animation
         if (time - startTime > duration / 1000) {
-          console.log("done animating, moving to next layout");
-
           // cancel this loop, we are going to start another
           frameLoop.cancel();
 
