@@ -3,6 +3,7 @@ import styles from "./styles.scss";
 
 // Import other components
 import PulsatingBall from "../PulsatingBall";
+import TestCanvas from "../TestCanvas";
 
 export default class App extends React.Component {
   componentDidMount() {}
@@ -12,7 +13,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.root} ref={el => (this.node = el)}>
-        <PulsatingBall />
+        {/* <PulsatingBall /> */}
+        <TestCanvas />
       </div>
     );
   }

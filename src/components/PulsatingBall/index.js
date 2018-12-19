@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./styles.scss";
-// import regl from "regl"
+import regl from "regl";
 const d3 = require("d3");
 
-var regl = createREGL();
+// var regl = createREGL();
 
 // Import the shaders
 import frag from "./frag";
 import vert from "./vert";
+
+
 
 export default class PulsatingBall extends React.Component {
   componentDidMount() {
@@ -134,11 +136,11 @@ export default class PulsatingBall extends React.Component {
         }
 
         // clear the buffer
-        // regl.clear({
-        //   // background color (black)
-        //   color: [0, 0, 0, 0.0],
-        //   depth: 1
-        // });
+        regl.clear({
+          // background color (black)
+          color: [0.2, 0.2, 0.111, 1.1],
+          depth: 1
+        });
 
         // draw the points using our created regl func
         // note that the arguments are available via `regl.prop`.
