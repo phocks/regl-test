@@ -134,11 +134,11 @@ export default class PulsatingBall extends React.Component {
         }
 
         // clear the buffer
-        regl.clear({
-          // background color (black)
-          color: [0, 0, 0, 1],
-          depth: 1
-        });
+        // regl.clear({
+        //   // background color (black)
+        //   color: [0, 0, 0, 0.0],
+        //   depth: 1
+        // });
 
         // draw the points using our created regl func
         // note that the arguments are available via `regl.prop`.
