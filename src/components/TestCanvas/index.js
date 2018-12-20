@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "./styles.scss";
 
+let regl
+
 // Again, we start out by requiring regl
-var regl = require("regl")();
+
 
 export default class TestCanvas extends React.Component {
+  componentWillMount() {
+    regl = require("regl")();
+  }
   componentDidMount() {
     // Next, we create a new command.
     //
