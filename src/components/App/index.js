@@ -4,6 +4,7 @@ import styles from "./styles.scss";
 // Import other components
 import PulsatingBall from "../PulsatingBall";
 import TestCanvas from "../TestCanvas";
+import DotStream from "../DotStream";
 
 export default class App extends React.Component {
   componentDidMount() {}
@@ -12,9 +13,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.root} ref={el => (this.node = el)}>
+      <div className={styles.root}>
         {/* <PulsatingBall /> */}
-        <TestCanvas />
+        {/* <TestCanvas /> */}
+        <DotStream />
       </div>
     );
   }
