@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "babel-polyfill": "^6.26.0",
-    "d3": "^5.7.0",
+    "d3": "^5.16.0",
     "glslify": "^7.0.0",
     "promise-polyfill": "8.1.0",
     "react": "^16.6.3",
