@@ -19,7 +19,7 @@
     "react-test-renderer": "^16.6.3"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
+    "@babel/polyfill": "^7.12.1",
     "babel-polyfill": "^6.26.0",
     "d3": "^5.7.0",
     "glslify": "^7.0.0",
